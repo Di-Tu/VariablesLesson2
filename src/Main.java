@@ -79,7 +79,7 @@ public class Main {
         byte totalRooms = (byte) (totalCans / oneRoomTotalPaint);
         byte totalWhitePaint = (byte) (totalRooms * oneRoomOfWhitePaint);
         byte totalBrownPaint = (byte) (totalRooms * oneRoomOfBrownPaint);
-        System.out.println("В школе, где " + totalRooms + " классов, нужно " + totalWhitePaint  + " банок белой краски и " + totalBrownPaint + " банок коричневой краски.");
+        System.out.println("В школе, где " + totalRooms + " классов, нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски.");
 
         System.out.println();
         System.out.println("                Задача №6");
@@ -96,7 +96,7 @@ public class Main {
         short totalGram = (short) (bananas * bananaWeight + milk / 100 * milkWeight + iceCream * iceCreamWeight + egg * eggWeight);
 //        Пересчитываем в килограммы
         float totalKilo = totalGram / 1000F;
-        System.out.println("Завтрак спортсмена весит " + totalGram + " грамм или " + totalKilo + " килограмм" );
+        System.out.println("Завтрак спортсмена весит " + totalGram + " грамм или " + totalKilo + " килограмм");
 
         System.out.println();
         System.out.println("                Задача №7");
@@ -116,7 +116,7 @@ public class Main {
 
         System.out.println();
         System.out.println("                Задача №8");
-        byte countingTime = 3;
+//        byte countingTime = 3;
         byte increasePercentage = 10;
         int salaryPerMonthMasha = 67_760;
         int salaryPerMonthDen = 83_690;
@@ -126,9 +126,9 @@ public class Main {
         int salaryPerYearDen = salaryPerMonthDen * 12;
         int salaryPerYearKristina = salaryPerMonthKristina * 12;
 //        Вычисляем новую зарплату. Считаем в целых рублях и только за один период
-        int salaryPerMonthMashaNew = salaryPerMonthMasha + ( (int) (salaryPerMonthMasha / 100f * increasePercentage));
+        int salaryPerMonthMashaNew = salaryPerMonthMasha + ((int) (salaryPerMonthMasha / 100f * increasePercentage));
         int salaryPerMonthDenNew = salaryPerMonthDen + (int) (salaryPerMonthDen / 100f * increasePercentage);
-        int salaryPerMonthKristinaNew = salaryPerMonthKristina + (int) (salaryPerMonthKristina / 100f * increasePercentage) ;
+        int salaryPerMonthKristinaNew = salaryPerMonthKristina + (int) (salaryPerMonthKristina / 100f * increasePercentage);
 //        Вычисляем новый годовой доход
         int salaryPerYearMashaNew = salaryPerMonthMashaNew * 12;
         int salaryPerYearDenNew = salaryPerMonthDenNew * 12;
